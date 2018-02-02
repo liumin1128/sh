@@ -7,7 +7,7 @@ echo '更新软件仓库'
 yum update && yum upgrade 
 
 echo '安装初始软件'
-yum -y zsh git wget
+yum -y install zsh git wget
 
 source ~/.zshrc
 
