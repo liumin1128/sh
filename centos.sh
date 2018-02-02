@@ -29,8 +29,8 @@ export NVM_DIR="$HOME/.nvm"
 
 echo '设置npm淘宝源'
 echo '
-NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
-NVM_IOJS_ORG_MIRROR=https://npm.taobao.org/mirrors/iojs' >> ~/.zshrc && source ~/.zshrc
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+export NVM_IOJS_ORG_MIRROR=https://npm.taobao.org/mirrors/iojs' >> ~/.zshrc && source ~/.zshrc
 
 # echo '安装最新node'
 # nvm install stable
