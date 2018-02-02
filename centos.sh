@@ -26,3 +26,6 @@ echo '\n#alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taobao.
   --cache=$HOME/.npm/.cache/cnpm \
   --disturl=https://npm.taobao.org/dist \
   --userconfig=$HOME/.cnpmrc"' >> ~/.zshrc && source ~/.zshrc
+
+echo '安装最新node'
+nvm install stable
