@@ -17,4 +17,12 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 echo 'nvm'
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | zsh
 
-# echo "Intel Galileo" >> test.txt  
+echo '将nvm加入zshrc'
+echo 'export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm' >> ~/.zshrc && source ~/.zshrc
+
+echo '设置npm淘宝源'
+echo '\n#alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taobao.org \
+  --cache=$HOME/.npm/.cache/cnpm \
+  --disturl=https://npm.taobao.org/dist \
+  --userconfig=$HOME/.cnpmrc"' >> ~/.zshrc && source ~/.zshrc
