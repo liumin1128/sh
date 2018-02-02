@@ -22,11 +22,6 @@ echo '
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm' >> ~/.zshrc && source ~/.zshrc
 
-# echo #alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taobao.org \
-#   --cache=$HOME/.npm/.cache/cnpm \
-#   --disturl=https://npm.taobao.org/dist \
-#   --userconfig=$HOME/.cnpmrc"' >> ~/.zshrc && source ~/.zshrc
-
 echo '设置npm淘宝源'
 echo '
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
